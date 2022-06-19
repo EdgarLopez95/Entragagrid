@@ -1,0 +1,39 @@
+:root {
+  --fondoOscuro: #02081e;
+  --azulOscuro: #000a2f;
+  --amarillo: #ffd400;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.nav__ul {
+  list-style: none;
+}
+
+.nav {
+  height: 70px;
+  background-color: var(--amarillo);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.nav__logo {
+  height: 100%;
+}
+.nav__img {
+  height: 70px;
+}
+.nav__ul {
+  display: flex;
+}
