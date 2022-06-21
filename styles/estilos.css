@@ -3,6 +3,7 @@
   --azulOscuro: #000a2f;
   --amarillo: #ffd400;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -40,11 +41,13 @@ ul {
   justify-self: end;
   margin-right: 50px;
 }
+
 .nav__ul-link:hover {
   background-color: var(--amarillo);
   padding: 31px 5px;
   color: var(--fondoOscuro);
 }
+
 .nav__ul-link {
   text-transform: uppercase;
   font-weight: 700;
@@ -54,7 +57,7 @@ ul {
   transition: padding 500ms;
 }
 
-.nav__ul-menuhamburguesa{
+.nav__ul-menuhamburguesa {
   display: none;
 }
 
@@ -77,6 +80,7 @@ ul {
   justify-content: center;
   align-content: center;
 }
+
 .sectionIndex-uno__titulo {
   color: white;
   font-size: 6.4rem;
@@ -85,16 +89,19 @@ ul {
   animation-duration: 5s;
   margin: 0 50px;
 }
+
 @keyframes animacionTexto {
   from {
     opacity: 0;
     font-size: 5.4rem;
   }
+
   to {
     opacity: 1;
     font-size: 6.4rem;
   }
 }
+
 /* Acá inicia la sección dos */
 .sectionIndex-dos {
   width: 90%;
@@ -124,6 +131,99 @@ ul {
 .sectionIndex-dos-derecha p {
   font-size: 1.6rem;
   max-width: 600px;
+  margin-bottom: 40px;
+}
+
+/* Acá inicia la sección tres */
+.sectionIndex-tres {
+  width: 100%;
+  background-color: var(--fondoOscuro);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionIndex-tres__div {
+  max-width: 900px;
+  display: grid;
+  place-items: center;
+  margin: 100px 30px;
+}
+
+.sectionIndex-tres__div p {
+  text-align: center;
+  font-size: 1.6rem;
+  color: white;
+  margin: 0 10px;
+}
+
+.sectionIndex-tres__div h2 {
+  margin: 10px 0 30px 0;
+  color: white;
+  font-size: 4.6rem;
+  text-align: center;
+}
+
+.sectionIndex-tres__div button {
+  border: none;
+  padding: 10px 30px;
+  background-color: var(--amarillo);
+  border-radius: 50px;
+  margin: 0 10px;
+  font-size: 1.6rem;
+}
+
+.sectionIndex-tres__div button a {
+  color: var(--azulOscuro);
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+}
+
+/* Acá inicia la sección tres */
+
+.section-cuatro {
+  height: 400px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-cuatro a {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.6rem;
+  background-color: var(--azulOscuro);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+/* acá inicia el footer */
+.footer {
+  background-color: var(--fondoOscuro);
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.nav__linksInf {
+  justify-self: end;
+  margin-right: 50px;
+}
+
+.nav__ul-linkInf:hover {}
+
+.nav__ul-linkInf {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  transition: background-color 500ms;
+  transition: padding 500ms;
+  font-size: 1.4rem;
 }
 
 /* Estilos tablet */
@@ -132,8 +232,8 @@ ul {
   .nav__ul-link {
     display: none;
   }
-  
-  .nav__ul-menuhamburguesa{
+
+  .nav__ul-menuhamburguesa {
     display: block;
     color: white;
     font-size: 20px;
@@ -147,16 +247,19 @@ ul {
     animation-duration: 5s;
     margin: 0 50px;
   }
+
   @keyframes animacionTexto {
     from {
       opacity: 0;
       font-size: 3.4rem;
     }
+
     to {
       opacity: 1;
       font-size: 4.4rem;
     }
   }
+
   .sectionIndex-dos {
     grid-template-columns: 1fr;
     gap: 0px;
@@ -164,5 +267,26 @@ ul {
 }
 
 @media screen and (max-width: 425px) {
-  
+  .sectionIndex-uno__titulo {
+    font-size: 3.4rem;
+  }
+
+  @keyframes animacionTexto {
+    from {
+      font-size: 2.4rem;
+    }
+
+    to {
+      font-size: 3.4rem;
+    }
+  }
+
+  .sectionIndex-tres__div button {
+    font-size: 1rem;
+    margin: 0 2px;
+  }
+
+  .sectionIndex-tres__div h2 {
+    font-size: 3.6rem;
+  }
 }
