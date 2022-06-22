@@ -12,11 +12,13 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Montserrat", sans-serif;
   background: #e7edf2;
 }
 
-a {
+a:link,
+a:visited,
+a:active {
+  font-family: "Montserrat", sans-serif;
   text-decoration: none;
 }
 
@@ -25,11 +27,10 @@ ul {
 }
 
 .nav {
-  height: 80px;
+  height: 73px;
   background-color: var(--fondoOscuro);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   align-items: center;
+  justify-content: space-between;
 }
 
 .nav__img {
@@ -38,7 +39,7 @@ ul {
 }
 
 .nav__links {
-  justify-self: end;
+  display: flex;
   margin-right: 50px;
 }
 
@@ -82,6 +83,8 @@ ul {
 }
 
 .sectionIndex-uno__titulo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   color: white;
   font-size: 6.4rem;
   text-align: center;
@@ -102,25 +105,114 @@ ul {
   }
 }
 
-/* Acá inicia la sección dos */
-.sectionIndex-dos {
-  width: 90%;
+.sectionPortafolio-uno,
+.sectionRecorrido-uno,
+.sectionServicios-uno {
+  width: 100%;
+  min-height: 400px;
+  background-color: var(--fondoOscuro);
+}
+
+.sectionPortafolio-uno h2,
+.sectionRecorrido-uno h2,
+.sectionServicios-uno h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 8.4rem;
+  line-height: 400px;
+  text-align: center;
+  animation-name: animacionTextoPortafolio;
+  animation-duration: 4s;
+}
+
+@keyframes animacionTextoPortafolio {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.sectionServicios-uno__grid {
+  max-width: 1200px;
+  display: grid;
+  margin: 0 auto;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 30px;
+}
+.sectionServicios-uno__grid a {
+  width: 100%;
+  height: 200px;
+  border-radius: 50%;
+  color: var(--fondoOscuro);
+  font-size: 1.6rem;
+  background: white;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  text-align: center;
+  line-height: 200px;
+}
+
+.sectionContacto-uno{
+  background-image: url(../assets/banner-home.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 92.2vh;
+  display: flex;
+  align-items: center;
+}
+.grid-contacto-uno{
+  width: 1200px;
   margin: 0 auto;
   display: grid;
-  gap: 30px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 600px;
+}
+.grid-contacto-uno div h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 8.4rem;
+}
+
+label{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 2.4rem;
+}
+
+input::placeholder {
+  font-size: 1.4rem;
+}
+
+/* Acá inicia la sección dos */
+.sectionIndex-dos {
+  padding: 100px 0;
+}
+
+.fila {
+  justify-content: center;
   align-items: center;
 }
 
-.sectionIndex-dos-izquierda {
+.sectionIndex-dos-izquierda div {
   background-color: #bccad3;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   height: 500px;
   border-radius: 50px;
 }
+.sectionIndex-dos-derecha div {
+  width: 90%;
+  margin: 0 auto;
+}
 
 .sectionIndex-dos-derecha h3 {
+  font-family: "Montserrat", sans-serif;
   font-size: 3.6rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -129,6 +221,65 @@ ul {
 }
 
 .sectionIndex-dos-derecha p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.sectionPortafolio-dos {
+  background-color: var(--fondoOscuro);
+  padding: 100px 0;
+}
+.sectionPortafolio-dos__div div {
+  background: var(--amarillo);
+  width: 90%;
+  height: 300px;
+  margin: 20px auto;
+  border-radius: 10%;
+  transition: background 500ms;
+  transition: margin 500ms;
+  transition: width 500ms;
+}
+
+.sectionPortafolio-dos__div div:hover {
+  background: rgb(161, 160, 95);
+  width: 95%;
+  margin: 15px auto;
+}
+
+.sectionRecorrido-dos {
+  max-width: 1200px;
+  height: 500px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.sectionRecorrido-dos__derecha {
+  align-self: center;
+  margin: 0 30px;
+}
+.sectionRecorrido-dos__izquierda {
+  place-self: center;
+}
+.sectionRecorrido-dos__izquierda .imagen {
+  width: 400px;
+  height: 400px;
+  background-color: var(--azulOscuro);
+}
+
+.sectionRecorrido-dos__derecha h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--azulOscuro);
+  padding: 20px 0;
+}
+
+.sectionRecorrido-dos__derecha p {
+  font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   max-width: 600px;
   margin-bottom: 40px;
@@ -151,6 +302,7 @@ ul {
 }
 
 .sectionIndex-tres__div p {
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   font-size: 1.6rem;
   color: white;
@@ -158,6 +310,7 @@ ul {
 }
 
 .sectionIndex-tres__div h2 {
+  font-family: "Montserrat", sans-serif;
   margin: 10px 0 30px 0;
   color: white;
   font-size: 4.6rem;
@@ -180,7 +333,7 @@ ul {
   font-weight: 800;
 }
 
-/* Acá inicia la sección tres */
+/*>>>>>>>>>>>>>>>>>>>>>>>>> Acá inicia la sección cuatro <<<<<<<<<<<<<<<<<*/
 
 .section-cuatro {
   height: 400px;
@@ -214,8 +367,6 @@ ul {
   justify-self: end;
   margin-right: 50px;
 }
-
-.nav__ul-linkInf:hover {}
 
 .nav__ul-linkInf {
   text-transform: uppercase;
@@ -259,10 +410,15 @@ ul {
       font-size: 4.4rem;
     }
   }
-
-  .sectionIndex-dos {
+  .sectionRecorrido-dos {
     grid-template-columns: 1fr;
-    gap: 0px;
+  }
+  .grid-contacto-uno{
+    grid-template-columns: 1fr;
+  }
+  .grid-contacto-uno div h2 {
+
+    font-size: 4.4rem;
   }
 }
 
@@ -288,5 +444,18 @@ ul {
 
   .sectionIndex-tres__div h2 {
     font-size: 3.6rem;
+  }
+  .sectionRecorrido-dos__izquierda .imagen {
+    width: 300px;
+    height: 300px;
+  }
+  .sectionRecorrido-uno h2 {
+    font-size: 3.4rem;
+  }
+  .sectionServicios-uno h2 {
+    font-size: 3.4rem;
+  }
+  .sectionServicios-uno__grid {
+    grid-template-columns: 1fr;
   }
 }

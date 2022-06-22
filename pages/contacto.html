@@ -1,82 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/estilos.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../styles/estilos.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
-  <title>Document</title>
-</head>
-
-<body>
-  <header class="header">
-    <nav class="nav">
-      <div class="nav__logo">
-        <a href="../index.html">
-          <img src="../assets/logo-inicio.svg" alt="logo pagina" class="nav__img" />
-        </a>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__logo">
+          <a href="../index.html">
+            <img
+              src="../assets/logo-inicio.svg"
+              alt="logo pagina"
+              class="nav__img"
+            />
+          </a>
+        </div>
+        <div class="nav__links">
+          <ul class="nav__ul-links">
+            <li>
+              <a href="recorrido.html" class="nav__ul-link">Recorrido</a>
+            </li>
+            <li>
+              <a href="portafolio.html" class="nav__ul-link">Portafolio</a>
+            </li>
+            <li>
+              <a href="servicios.html" class="nav__ul-link">Servicios</a>
+            </li>
+            <li>
+              <a href="contacto.html" class="nav__ul-link">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container-fluid sectionContacto-uno">
+        <div class="grid-contacto-uno">
+        <div>
+          <h2>Contácto</h2>
+        </div>
+        <div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label"
+              >Correo</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Escribe tu correo"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Texto</label
+            >
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+        </div>
       </div>
-      <div class="nav__links">
-        <ul class="nav__ul-links">
-          <li>
-            <a href="recorrido.html" class="nav__ul-link">Recorrido</a>
-          </li>
-          <li>
-            <a href="portafolio.html" class="nav__ul-link">Portafolio</a>
-          </li>
-          <li>
-            <a href="servicios.html" class="nav__ul-link">Servicios</a>
-          </li>
-          <li>
-            <a href="contacto.html" class="nav__ul-link">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <section class="sectionPortafolio-uno">
+      </section>
+    </main>
 
-    </section>
-    <section class="sectionPortafolio-dos">
-
-    </section>
-    <section class="sectionPortafolio-tres">
-
-    </section>
-    <section class="section-cuatro">
-      <a href="./pages/contacto.html">Contacto</a>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer-izq">
-      <ul class="nav__ul-linksInf">
-        <li>
-          <a href="recorrido.html" class="nav__ul-linkInf">Recorrido</a>
-        </li>
-        <li>
-          <a href="portafolio.html" class="nav__ul-linkInf">Portafolio</a>
-        </li>
-        <li>
-          <a href="servicios.html" class="nav__ul-linkInf">Servicios</a>
-        </li>
-        <li>
-          <a href="contacto.html" class="nav__ul-linkInf">Contacto</a>
-        </li>
-
-      </ul>
-    </div>
-    <div class="footer-der">
-      <a href="index.html">
-        <img src="../assets/logo-inicio.svg" alt="logo pagina" class="nav__img" />
-
-    </div>
-  </footer>
-</body>
-
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
